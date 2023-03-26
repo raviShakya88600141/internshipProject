@@ -1,0 +1,513 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', 'sans-serif';
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.cornerIcons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.cornerIcons div {
+    width: 55px;
+    height: 55px;
+    background-color: #0029FF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.cornerIcons div img {
+    width: 30px;
+    height: 30px;
+}
+
+.nabvar {
+    display: flex;
+    background-color: #F0F0F0;
+    padding: 15px 50px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu-icon-wrapper {
+    background-color: #3683F0;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.leftSidebar {
+    width: 10vw;
+}
+
+#journeyBoardCard {
+    width: 470px;
+    height: 700px;
+    transform: translateX(-350px);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    border-radius: 0 15px 15px 0 !important;
+
+}
+
+#journeyBoardCard:hover {
+    transform: translateX(0px);
+    width: 400px;
+}
+
+#journeyBoardCard:hover .leftCardCount {
+    display: none;
+}
+
+#journeyBoardCard .cardHeading {
+    border-radius: 0 10px 0 0 !important;
+}
+
+
+#leftcard {
+    padding: 20px;
+}
+
+#leftcard ul li:first-child {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding-left: 0px;
+
+}
+
+#leftcard ul li {
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 15px;
+    color: black;
+}
+
+.journeyboardContent {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.leftCardCount {
+    border: 2px solid #0029FF;
+    color: #0029FF;
+    padding: 20px;
+    border-radius: 18px;
+    width: 70px;
+    height: 70px;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContent {
+    width: 80vw;
+    height: 100%;
+}
+
+.rightSidebar {
+    /* background-color: red; */
+    width: 8vw;
+    margin-left: 50px;
+}
+
+.mainHeading {
+    font-size: 28px;
+    color: #0029FF;
+}
+
+.upperHeading {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+
+}
+
+.btn-primary {
+    background-color: #0029FF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Poppins', 'sans-serif';
+    cursor: pointer;
+}
+
+
+.banner {
+    background-color: #E9ECEF;
+    padding: 30px 20px;
+    border-radius: 5px;
+}
+
+.banner h5 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+
+}
+
+.banner p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.card-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 90px 30px;
+    margin: 60px 0px;
+}
+
+.card {
+    height: 580px;
+    width: 480px;
+    border-radius: 10px;
+    background: #FDFDFD;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px -4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+
+}
+
+.cardHeading {
+    position: relative;
+    background-color: black;
+    text-align: center;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+    padding: 15px;
+}
+
+.informationIcon {
+    position: absolute;
+    right: 30px;
+    top: 13px;
+    width: 22px;
+    height: 22px;
+    background-color: white;
+    border-radius: 50%;
+    color: black;
+}
+
+.cardBody {
+    font-size: 14px;
+    font-weight: 600px;
+    padding: 20px;
+}
+
+/* .cardBody p {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+} */
+
+
+.videoContent {
+    width: 480px;
+    height: 291px;
+}
+
+.videoContent iframe {
+    width: 480px;
+    height: 291px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 20px;
+
+}
+
+.details input,
+textarea {
+    outline: none;
+    border: none;
+    padding: 10px;
+    background: #FDFDFD;
+    box-shadow: -2px 2px 6px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+}
+
+.details label {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.collapseHeading {
+    position: relative;
+    display: flex;
+    background: rgba(254, 255, 192, 0.2);
+    align-items: center;
+    padding: 10px;
+    gap: 50px;
+    cursor: pointer;
+}
+
+.collapseHeading img {
+    height: 10px;
+    width: 16px;
+}
+
+.collapseBody {
+    padding: 20px 30px;
+    display: block;
+}
+
+.textarea {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 10px 10px 0 0;
+}
+
+.textarea p {
+    background: rgba(0, 0, 0, 0.05);
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 12px;
+    padding: 5px 10px;
+
+}
+
+.textarea input {
+    padding: 17px 10px;
+    border-radius: 10px;
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.25);
+    border: none;
+    outline: none;
+    height: 70px;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+#summaryForThreadA {
+    height: 80px;
+}
+
+.dropdown {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+/* .textarea input:focus-visible {
+    outline: none;
+    border: none;
+} */
+
+.maintext {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    /* padding: 30px; */
+}
+
+.wrapper-box {
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+    margin: 20px 0px;
+    align-items: center;
+    gap: 10px;
+}
+
+.wrapper-box select {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    padding: 7px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.wrapper-box select:focus-visible {
+    outline: none;
+}
+
+.fourIcons {
+    display: flex;
+    gap: 15px;
+}
+
+.fourIcons img {
+    cursor: pointer;
+
+}
+
+
+
+.btn-primary-two {
+    background-color: #0029FF;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Poppins', 'sans-serif';
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.btn-primary-two span {
+    font-size: 20px;
+    padding-right: 5px;
+
+}
+
+.textareaTwo {
+    display: flex;
+    flex-direction: column;
+}
+
+#technicalcollapseContent {
+    background-color: #F2F2F2;
+}
+
+.technicalcollapse p {
+    font-size: 14px;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+.technicalcollapse h6 {
+    font-size: 14px;
+    cursor: pointer;
+    text-align: end;
+    color: #606161;
+    font-weight: 600;
+}
+
+.technicalcollapse h6:hover {
+    color: #0029FF;
+}
+
+.threadCollapse {
+    background: #FCFCFC !important;
+    border: 1px solid #D9D7D7 !important;
+}
+
+.contentInput-menu {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+
+}
+
+.contentInput-menu p {
+    color: #616161;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.contentInput {
+    background: #FCFBFB;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.18);
+    border-radius: 5px 5px 0px 0px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#structureContent-input {
+    margin-top: -5px;
+    border-radius: 0 0 5px 5px;
+}
+
+.point div {
+    width: 5px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: black;
+    background-color: #616161;
+}
+
+.contentinput-menu2 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.para {
+    background-color: #EBEBEB;
+}
+
+.point {
+    display: flex;
+    gap: 3px;
+
+}
+
+
+#rightSidebarCard {
+    display: flex;
+    /* width: 90px; */
+    height: 395px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px -4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    margin-top: 20px;
+    transform: translateX(0px);
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+
+}
+
+#rightSidebarCard:hover {
+    transform: translateX(-300px);
+
+}
+
+#rightSidebarCard .cardHeading {
+    padding: 20px;
+    border-radius: 30px 0px 0px 30px;
+}
+
+
+#rightSidebarCard .cardHeading h6 {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 400;
+}
