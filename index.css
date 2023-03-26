@@ -39,7 +39,7 @@ body {
     height: 30px;
 }
 
-.nabvar {
+.navbar {
     display: flex;
     background-color: #F0F0F0;
     padding: 15px 50px;
@@ -61,8 +61,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
+.menu-icon-wrapper:hover {
+    background-color: #1867d7;
+}
 
 .container {
     display: flex;
@@ -232,7 +236,13 @@ body {
 .cardBody {
     font-size: 14px;
     font-weight: 600px;
-    padding: 20px;
+    padding: 0px 20px;
+}
+
+.descriptionBody {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+    padding: 10px 20px;
+
 }
 
 /* .cardBody p {
@@ -408,7 +418,7 @@ textarea {
 
 .technicalcollapse p {
     font-size: 14px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     font-weight: 400;
 }
 
@@ -510,4 +520,69 @@ textarea {
     margin-top: 20px;
     font-size: 16px;
     font-weight: 400;
+}
+
+/* Navbar dropdown  */
+
+
+.menu-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-item {
+    color: #FCC;
+    padding: 3px;
+}
+
+.three-dots {
+    position: relative;
+}
+
+.three-dots:after {
+    cursor: pointer;
+    color: #444;
+    content: '\2807';
+    font-size: 20px;
+    padding: 0 5px;
+}
+
+
+.iconDropdown {
+    position: absolute;
+    right: 60px;
+    background-color: rgb(240, 240, 240);
+    padding: 20px;
+    outline: none;
+    opacity: 0;
+    z-index: -1;
+    max-height: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px -4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.iconDropdown a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.iconDropdown a div {
+    padding: 8px 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.iconDropdown a div:hover {
+    font-weight: 500;
+}
+
+
+
+.dropdown-container:focus {
+    outline: none;
+}
+
+.dropdown-container:focus .iconDropdown {
+    opacity: 1;
+    z-index: 100;
+    max-height: 100vh;
 }
